@@ -1,374 +1,334 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naluthabo H Sibisi | Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <title>Naluthabo Sibisi | Backend & Data Systems</title>
+  <meta name="description" content="Naluthabo H Sibisi — Backend & Data Systems Engineer. C# · .NET · SQL Server">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-    <header class="site-header">
-        <div class="container">
-            <div class="logo">
-                <a href="#" class="logo-link">N<span class="accent">.</span>Sibisi</a>
-            </div>
-            <nav class="main-nav">
-                <input type="checkbox" id="nav-toggle" class="nav-toggle">
-                <label for="nav-toggle" class="nav-toggle-label">
-                    <span></span>
-                </label>
-                <ul class="nav-links">
-                    
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#tech">Tech Stack</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <!-- Hero Section -->
-<section id="hero-section" class="hero">
-    <div class="container">
-        <div class="hero-content">
-            <h1 class="hero-title">Aspiring Software Engineer <span class="accent">&</span> Cloud Developer</h1>
-            <p class="hero-subtitle">Building digital solutions with precision and passion</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Get In Touch</a>
-            </div>
-        </div>
+  <!-- NAV -->
+  <nav>
+    <span class="nav-logo">naluthabo.dev</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home">
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Backend &amp; Data Systems Engineer</div>
+      <h1 class="hero-name">Naluthabo <span>H. Sibisi</span></h1>
+      <p class="hero-tagline">Building practical systems with the .NET ecosystem · Systems Thinker · Final-year IT Student</p>
+
+      <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 1.5rem; font-family: var(--mono);">
+      This page has been viewed <span id="counter" style="color: var(--accent);">—</span> times
+      </p>
+
+      <div class="hero-stack">
+        <span class="stack-tag">C#</span>
+        <span class="stack-tag">.NET</span>
+        <span class="stack-tag">SQL Server</span>
+        <span class="stack-tag">ASP.NET</span>
+        <span class="stack-tag">WinForms</span>
+        <span class="stack-tag">Azure</span>
+        <span class="stack-tag">Apache Spark</span>
+        <span class="stack-tag">Power BI</span>
+      </div>
+      <div class="hero-links">
+        <a href="https://github.com/HalalisaniSibisi" class="btn-primary" target="_blank">GitHub Portfolio</a>
+        <a href="https://linkedin.com/in/naluthabo-sibisi-17535a1aa" class="btn-ghost" target="_blank">LinkedIn</a>
+        <button onclick="document.getElementById('contact-modal').style.display='flex'" class="btn-ghost">Contact Me</button>
     </div>
-</section>
+  </header>
 
-<!-- About Section -->
-<section id="about" class="about">
+  <!-- ABOUT -->
+  <section id="about">
     <div class="container">
-        <div class="section-header">
-            <span class="section-tag">About</span>
-            <h2 class="section-title">Who I Am</h2>
-        </div>
-        <div class="about-content">
-            <div class="about-text">
-                <p>I am Naluthabo Sibisi, a 25-year-old second-year IT student with a passion for software engineering, backend development, cloud engineering, and data analysis. I strive to create elegant solutions to complex problems by leveraging my technical skills and logical thinking.</p>
-                
-                <p>Currently focusing on expanding my knowledge in distributed systems and cloud architecture while building practical applications that solve real-world problems.</p>
+      <p class="section-label">01 · About</p>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a final-year Information Technology student at UNISA with a focus on building practical, real-world software using the .NET ecosystem  C#, WinForms, ASP.NET, and SQL Server.
+          </p>
+          <p>
+            I thrive on turning real operational problems into working systems, applying object-oriented principles and full-stack thinking across the UI, business logic, and data layers. I'm deliberately building a broad technical foundation while leaning toward backend and data-driven systems as I move toward a software engineering career.
+          </p>
+          <div class="philosophy-block">
+            <div class="philosophy-item">
+              <div class="dot"></div>
+              <span>Design first, code later</span>
             </div>
-            <div class="about-image">
-                <img src="assets/images/NHS.jpg" alt="Your Name">
+            <div class="philosophy-item">
+              <div class="dot"></div>
+              <span>Build small, scale later</span>
+            </div>
+          </div>
         </div>
+        <div class="about-details">
+          <div class="detail-card">
+            <div class="label">Location</div>
+            <div class="value">EMondlo, KwaZulu-Natal, South Africa</div>
+          </div>
+          <div class="detail-card">
+            <div class="label">Email</div>
+            <div class="value"><a href="mailto:sibisihalalisani203@gmail.com">sibisihalalisani203@gmail.com</a></div>
+          </div>
+          <div class="detail-card">
+            <div class="label">Phone</div>
+            <div class="value">078 761 2375</div>
+          </div>
+          <div class="detail-card">
+            <div class="label">GitHub</div>
+            <div class="value"><a href="https://github.com/HalalisaniSibisi" target="_blank">github.com/HalalisaniSibisi</a></div>
+          </div>
+          <div class="detail-card">
+            <div class="label">Status</div>
+            <div class="value" style="color: var(--green);">Open to opportunities</div>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Experience Section -->
-<section id="experience" class="timeline-section">
+  <!-- PROJECTS -->
+  <section id="projects">
     <div class="container">
-        <div class="section-header">
-            <span class="section-tag">Experience</span>
-            <h2 class="section-title">Professional Journey</h2>
-        </div>
-        
-            <!-- Experience Item 1 -->
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <div class="timeline-date">2022 - 2023</div>
-                    <h3 class="timeline-title">Sales Associate Youth Programme</h3>
-                    <p class="timeline-subtitle">Foschini</p>
-                    <p class="timeline-description">
-                        Provided excellent customer service and assisted clients with fashion advice.  
-                        Managed inventory, handled transactions, and ensured a smooth sales process.  
-                        Assisted in merchandising and store layout optimization to enhance customer experience.
-                    </p>
-                </div>
-            </div>
-            
-            
-        </div>
-    </div>
-</section>
+      <p class="section-label">02 · Projects</p>
+      <h2 class="section-title">What I've Built</h2>
+      <div class="projects-list">
 
-<!-- Education Section -->
-<section id="education" class="timeline-section">
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-name">LushBites Food Truck Management System</span>
+            <span class="project-status status-complete">Completed</span>
+          </div>
+          <p class="project-desc">
+            A multi-screen food truck management system enabling customers to browse menus, place orders, and submit personal details through a structured WinForms interface. Features South African ID validation using the Luhn algorithm — the same real-world verification logic used in financial and insurance systems. Order and customer data persists to file and is retrieved dynamically into a DataGridView for searchable transaction records.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">C#</span>
+            <span class="tech-tag">WinForms</span>
+            <span class="tech-tag">File Persistence</span>
+            <span class="tech-tag">Luhn Algorithm</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-name">Grocery Ordering Management System</span>
+            <span class="project-status status-progress">Phase 2 In Progress</span>
+          </div>
+          <p class="project-desc">
+            Addresses a real operational problem at an old age home where a manual, paper-based grocery ordering process resulted in fragmented records and limited reporting. Built a structured SQL Server database system with ERD design, role-based authentication separating resident and Matron/admin access, an admin dashboard for member and item management, and soft-delete to preserve historical data, improving data accuracy and establishing a scalable foundation for management reporting.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">C#</span>
+            <span class="tech-tag">WinForms</span>
+            <span class="tech-tag">SQL Server</span>
+            <span class="tech-tag">Role-Based Auth</span>
+            <span class="tech-tag">ERD Design</span>
+            <span class="tech-tag">Soft Delete</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-name">Student Registration System</span>
+            <span class="project-status status-complete">Phase 1 Complete</span>
+          </div>
+          <p class="project-desc">
+            Replaced a manual, queue-based student registration process with a C# (.NET) Windows Forms system backed by SQL Server. Students can register digitally while administrators manage courses and records through a structured platform. Built with a strong focus on database design (ERD), CRUD operations, role-based authentication, and a clean data access layer.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">C#</span>
+            <span class="tech-tag">.NET</span>
+            <span class="tech-tag">WinForms</span>
+            <span class="tech-tag">SQL Server</span>
+            <span class="tech-tag">ERD</span>
+            <span class="tech-tag">CRUD</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-name">CafeOps Insight System</span>
+            <span class="project-status status-dev">In Development</span>
+          </div>
+          <p class="project-desc">
+            A multi-layer café management and analytics platform bridging the gap between daily operations and real business visibility. Implements a separated architecture: a C# POS system (SQL Server OLTP) for live transaction capture, and a full analytics pipeline using Python, Apache Spark, and Azure Data Lakehouse (Bronze/Silver/Gold medallion architecture) to transform raw data into structured business intelligence, surfaced through Power BI dashboards for branch managers and owners across multiple locations.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">C#</span>
+            <span class="tech-tag">ASP.NET</span>
+            <span class="tech-tag">SQL Server</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Apache Spark</span>
+            <span class="tech-tag">Azure</span>
+            <span class="tech-tag">Data Lakehouse</span>
+            <span class="tech-tag">Power BI</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
     <div class="container">
-        <div class="section-header">
-            <span class="section-tag">Education</span>
-            <h2 class="section-title">Academic Background</h2>
+      <p class="section-label">03 · Skills</p>
+      <h2 class="section-title">Technical Foundation</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-group-title">Languages &amp; Frameworks</div>
+          <ul class="skill-list">
+            <li>C# (.NET)</li>
+            <li>SQL</li>
+            <li>PHP</li>
+            <li>Java</li>
+            <li>Python</li>
+          </ul>
         </div>
-        
-        <div class="timeline">
-            <!-- Education Item 1 -->
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <div class="timeline-date">2024 - Present</div>
-                    <h3 class="timeline-title">National Diploma in Information Technology</h3>
-                    <p class="timeline-subtitle">University of South Africa </p>
-                    <p class="timeline-description">
-                        Specializing in software development and information technology.
-                        Expected graduation: 2027.
-                    </p>
-                </div>
-            </div>
-            
-            <!-- Education Item 2 -->
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <div class="timeline-date">2013 - 2017</div>
-                    <h3 class="timeline-title">National Senior Certificate</h3>
-                    <p class="timeline-subtitle">Vryheid Comprehensive Secondary School</p>
-                    <p class="timeline-description">
-                        Graduated with a Bachelors Pass.
-                    </p>
-                </div>
-            </div>
-            
-            <!-- Add more education items as needed -->
+        <div class="skill-group">
+          <div class="skill-group-title">Database &amp; Data</div>
+          <ul class="skill-list">
+            <li>SQL Server</li>
+            <li>Relational Database Design</li>
+            <li>ERD Modelling</li>
+            <li>Schema &amp; Data Modelling</li>
+            <li>Apache Spark</li>
+          </ul>
         </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Architecture</div>
+          <ul class="skill-list">
+            <li>Layered Architecture (UI / BL / DA)</li>
+            <li>OOP Principles</li>
+            <li>OLTP System Design</li>
+            <li>Medallion Architecture</li>
+            <li>Structured Systems Analysis</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Tools &amp; Platforms</div>
+          <ul class="skill-list">
+            <li>Visual Studio</li>
+            <li>SSMS</li>
+            <li>Git / GitHub</li>
+            <li>Azure Data Services</li>
+            <li>Power BI</li>
+            <li>Linux Fundamentals</li>
+          </ul>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-
-<!-- Tech Stack Section -->
-<section id="tech" class="tech-stack">
+  <!-- EXPERIENCE -->
+  <section id="experience">
     <div class="container">
-        <div class="section-header">
-            <span class="section-tag">Skills</span>
-            <h2 class="section-title">Tech Stack</h2>
+      <p class="section-label">04 · Experience</p>
+      <h2 class="section-title">Work History</h2>
+      <div class="exp-card">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">Sales Consultant</div>
+            <div class="exp-company">Foschini (TFG Group), KwaZulu-Natal</div>
+          </div>
+          <div class="exp-period">Apr 2022 – Mar 2023</div>
         </div>
-        <div class="skills-container">
-            <div class="skill-card">
-                <i class="fab fa-python"></i>
-                <span>Python</span>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-js"></i>
-                <span>JavaScript</span>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-database"></i>
-                <span>SQL</span>
-            </div>
-            <div class="skill-card">
-                <i class="fa-brands fa-php"></i>
-                <span>php</span>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-java"></i>
-                <span>Java</span>
-            </div>
-            <div class="skill-card">
-                <i class="fa-solid fa-c"></i>
-                <span>C-sharp</span>
-                
-            </div>
-        </div>
+        <p class="exp-desc">
+          Worked in a fast-paced retail environment engaging directly with clients to understand their needs and translate them into appropriate product solutions. Collaborated with team members to manage competing priorities, resolve issues efficiently, and maintain smooth day-to-day operations under pressure — building strong communication and problem-solving skills transferable to any team environment.
+        </p>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Projects Section -->
-<section id="projects" class="projects">
+  <!-- EDUCATION & CERTS -->
+  <section id="education">
     <div class="container">
-        <div class="section-header">
-            <span class="section-tag">Portfolio</span>
-            <h2 class="section-title">Recent Projects</h2>
+      <p class="section-label">05 · Education &amp; Certifications</p>
+      <h2 class="section-title">Qualifications</h2>
+      <div class="edu-grid">
+        <div>
+          <div class="edu-card" style="margin-bottom: 16px;">
+            <div class="edu-title">National Diploma in Information Technology (NQF Level 6)</div>
+            <div class="edu-school">University of South Africa (UNISA)</div>
+            <div class="edu-period">Mar 2024 – Dec 2026 (Expected)</div>
+            <div class="edu-detail">Specialising in Software Development</div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-title">Grade 12 (NQF Level 4)</div>
+            <div class="edu-school">Vryheid Comprehensive Secondary School</div>
+            <div class="edu-period">Jan 2013 – Dec 2017</div>
+            <div class="edu-detail">Mathematics · Physical Sciences · English · IsiZulu</div>
+          </div>
         </div>
-        <div class="project-grid">
-            <div class="project-card">
-                <div class="project-content">
-                    <span class="project-category">Console Application</span>
-                    <h3 class="project-title">Student Performance System</h3>
-                    <p class="project-description">The Student Performance System is a C# application that models a basic academic management system.</p>
-                    <div class="project-tags">
-                        <span>C#</span>
-                        <span>.NET Framework</span>
-                        
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/HalalisaniSibisi/C-sharp-Projects/tree/main/Student%20Performance%20System" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
-                        
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <div class="project-content">
-                    <span class="project-category">Console Application</span>
-                    <h3 class="project-title">Project 2</h3>
-                    <p class="project-description">An analytical dashboard providing insights from complex datasets using advanced visualization techniques.</p>
-                    <div class="project-tags">
-                        <span>Java</span>
-
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
-
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <div class="project-content">
-                    <span class="project-category">Server-Side Application</span>
-                    <h3 class="project-title">Project 3</h3>
-                    <p class="project-description">A scalable cloud-based solution designed to handle high-traffic applications with optimal performance.</p>
-                    <div class="project-tags">
-                        <span>PHP</span>
-                        <span>SQL</span>
-
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/HalalisaniSibisi/php-dev-projects/blob/main/PHP%2520tasks" class="project-link"><i class="fab fa-github"></i> View Code</a>
-
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <div class="project-content">
-                    <span class="project-category">SQL Database</span>
-                    <h3 class="project-title">Project 4</h3>
-                    <p class="project-description">A robust API service handling complex business logic with high performance and security standards.</p>
-                    <div class="project-tags">
-                        <span>mySQL</span>
-                        <span>PHP</span>
-
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
-
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <div class="project-content">
-                    <span class="project-category">Windows Form Application</span>
-                    <h3 class="project-title">LushBites ZA</h3>
-                    <p class="project-description">An intelligent system that leverages ML algorithms to predict outcomes and automate decision processes.</p>
-                    <div class="project-tags">
-                        <span>C#</span>
-                        <span>WinForms</span>
-                        <span>.NET-Core</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
-
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <div class="project-content">
-                    <span class="project-category">Mobile Development</span>
-                    <h3 class="project-title">Lush Bites Android App</h3>
-                    <p class="project-description">A cross-platform mobile application delivering seamless user experience with modern design principles.</p>
-                    <div class="project-tags">
-                        <span>Java</span>
-                        <span>Android Studio</span>
-                        
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo </a>
-                    </div>
-                </div>
-            </div>
+        <div class="edu-card">
+          <div class="edu-title" style="margin-bottom: 1rem;">Certifications</div>
+          <ul class="cert-list">
+            <li><div class="cert-dot"></div>Microsoft Azure Fundamentals AZ-900</li>
+            <li><div class="cert-dot"></div>Google Cybersecurity Professional Certificate</li>
+            <li><div class="cert-dot"></div>Databricks Fundamentals</li>
+            <li><div class="cert-dot"></div>GenAI — WeThinkCode</li>
+            <li><div class="cert-dot"></div>Accenture Nordics Software Engineering Job Simulation</li>
+            <li><div class="cert-dot"></div>Microsoft AI Fluency Course</li>
+          </ul>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Contact Section -->
-<section id="contact" class="contact">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">Contact</span>
-            <h2 class="section-title">Get In Touch</h2>
-        </div>
-        <div class="contact-container">
-            <div class="contact-info">
-                <p>Feel free to reach out if you're looking for a developer, have a question, or just want to connect.</p>
-                <div class="contact-methods">
-                    <a href="mailto:sibisihalalisani203@gmail.com" class="contact-method">
-                        <i class="fas fa-envelope"></i>
-                        <span>sibisihalalisani203@gmail.com</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/naluthabo-sibisi-17535a1aa/" class="contact-method" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                        <span>Naluthabo H Sibisi</span>
-                    </a>
-                    <a href="https://github.com/HalalisaniSibisi" class="contact-method" target="_blank">
-                        <i class="fab fa-github"></i>
-                        <span>Halalisani S</span>
-                    </a>
-                </div>
-            </div>
-            <form action="https://formspree.io/f/xkgjnlvg" method="POST" class="contact-form">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-            </form>
-        </div>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="https://github.com/HalalisaniSibisi" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/naluthabo-sibisi-17535a1aa" target="_blank">LinkedIn</a>
+      <a href="mailto:sibisihalalisani203@gmail.com">Email</a>
     </div>
-</section>
+    <p>Naluthabo H. Sibisi · EMondlo, KwaZulu-Natal · References available on request</p>
+  </footer>
 
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <a href="#" class="logo-link">N<span class="accent">.</span>Sibisi</a>
-                <p>Software Engineer & Cloud Developer</p>
-            </div>
-            <div class="footer-links">
-                <a href="#about">About</a>
-                <a href="#tech">Tech Stack</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="footer-social">
-                <a href="https://github.com/HalalisaniSibisi"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/naluthabo-sibisi-17535a1aa/"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-                <a href="#"><i class="fab fa-dev"></i></a>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <p>&copy; 2025 Naluthabo H Sibisi. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
+  <div id="contact-modal" style="display:none; position:fixed; inset:0; z-index:200; background:rgba(0,0,0,0.6); align-items:center; justify-content:center; padding:1rem;">
+  <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:2rem; width:100%; max-width:480px; position:relative;">
+    
+    <button onclick="document.getElementById('contact-modal').style.display='none'" style="position:absolute; top:1rem; right:1rem; background:none; border:none; color:var(--text-muted); font-size:20px; cursor:pointer;">✕</button>
+    
+    <p style="font-family:var(--mono); font-size:11px; color:var(--accent); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:0.5rem;">Get in touch</p>
+    <h3 style="font-size:1.2rem; font-weight:600; color:var(--text-primary); margin-bottom:1.5rem;">Send me a message</h3>
+    
+    <form action="https://formspree.io/f/xkgjnlvg" method="POST" style="display:flex; flex-direction:column; gap:12px;">
+      <input type="text" name="name" placeholder="Your name" required
+        style="background:var(--bg); border:1px solid var(--border); border-radius:6px; padding:10px 14px; color:var(--text-primary); font-size:14px; font-family:var(--sans); outline:none;">
+      
+      <input type="email" name="email" placeholder="Your email" required
+        style="background:var(--bg); border:1px solid var(--border); border-radius:6px; padding:10px 14px; color:var(--text-primary); font-size:14px; font-family:var(--sans); outline:none;">
+      
+      <textarea name="message" placeholder="Your message" rows="4" required
+        style="background:var(--bg); border:1px solid var(--border); border-radius:6px; padding:10px 14px; color:var(--text-primary); font-size:14px; font-family:var(--sans); outline:none; resize:vertical;"></textarea>
+      
+      <button type="submit"
+        style="background:var(--accent); color:#fff; border:none; border-radius:6px; padding:11px; font-size:14px; font-weight:500; cursor:pointer; font-family:var(--sans); transition:background 0.2s;">
+        Send Message
+      </button>
+    </form>
+  </div>
+</div>
 
-
-
-
-
-
-
-
-<script src="js/script.js"></script>
 </body>
-
 </html>
 
